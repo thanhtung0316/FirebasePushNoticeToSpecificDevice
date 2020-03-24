@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371999478272",
+    "firebase_url": "https://test-wake-lock-54699.firebaseio.com",
+    "project_id": "test-wake-lock-54699",
+    "storage_bucket": "test-wake-lock-54699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371999478272:android:cc374edb75e3ea7497bee5",
+        "android_client_info": {
+          "package_name": "com.thanhtung.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371999478272-o3qogrdtapreb4jbc470p8gnp8npf1m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJGxagSax-otpo-f1ypmg5r2k4jVsPPQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371999478272-o3qogrdtapreb4jbc470p8gnp8npf1m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
