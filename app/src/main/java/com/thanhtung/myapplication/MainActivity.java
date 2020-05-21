@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btnSwitch.setOnCheckedChangeListener(this);
         shared = new MyShared(this);
         binding.edtToken.setText(shared.get("token"));
+
+        getDeviceToken();
 //        getWindow().addFlags(
 //                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
 //                        WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
@@ -76,11 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (isSaveToken){
                 shared.put("token",token);
             }
-            ApiBuilder.getInstance().sendMessage(new Sender(token, new Data("Title", "Content"))).enqueue(new Callback<MyResponse>() {
+            ApiBuilder.getInstance().sendMessage(new Sender(token, new Data("This ís message", "http://google.com.vn","01232465","hello kind"))).enqueue(new Callback<MyResponse>() {
                 @Override
                 public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
                     Log.e(TAG, "onResponse: " + response.errorBody());
-                    Toast.makeText(MainActivity.this, " "+response.body(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, " SUCCESS"+response.body(), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

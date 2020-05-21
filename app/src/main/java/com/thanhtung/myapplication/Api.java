@@ -8,7 +8,7 @@ import retrofit2.http.POST;
 public interface Api {
 
     @Headers({"Content-Type:application/json",
-            "Authorization:key=AAAAXEbZ-qQ:APA91bEzhFglxmOVk0QmT2jbTBnWTO9LHuP4j1OJstXPU-TZWAyizqJjKW17-ZLCM1D-NsHK-PUBtE_O_Xnk0IbsfzRAsvmdErd92hO3yeWtZJXAQGsu6cQmLq8Ka-czRphsQ4zSaMKe"})
+            "Authorization:key=AAAAVpzlkgA:APA91bEnPwqIYAe0eEx8xtvH35pFcZNrDCYCQCmacGgz_8Xfn1GHDU7aT5yUOp8kfirXi4HBbC7wlKuLL-xxuwDiDFAfC2eb3KXqd8xhmV2yO4bY1lrDyWXcsCxtqeriwQutIYQfz1jl"})
     @POST("fcm/send")
     Call<MyResponse> sendMessage(@Body Sender sender);
 }
